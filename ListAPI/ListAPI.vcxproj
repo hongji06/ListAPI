@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LinkList.c" />
+    <ClCompile Include="LinkListTest.c" />
+    <ClCompile Include="SeqListTest.c" />
+    <ClCompile Include="seq_list.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinkList.h" />
+    <ClInclude Include="seq_list.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1FB4B281-017A-4CA9-AACB-10BCA324BDEF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -145,16 +155,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="C:\Users\user\Desktop\List\LinkList.c" />
-    <ClCompile Include="C:\Users\user\Desktop\List\LinkListTest.c" />
-    <ClCompile Include="C:\Users\user\Desktop\List\SeqListTest.c" />
-    <ClCompile Include="C:\Users\user\Desktop\List\seq_list.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\user\Desktop\List\LinkList.h" />
-    <ClInclude Include="C:\Users\user\Desktop\List\seq_list.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -15,24 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\user\Desktop\List\LinkList.c">
+    <ClCompile Include="LinkList.c">
       <Filter>原始程式檔</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\List\LinkListTest.c">
+    <ClCompile Include="LinkListTest.c">
       <Filter>原始程式檔</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\List\seq_list.c">
+    <ClCompile Include="seq_list.c">
       <Filter>原始程式檔</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\List\SeqListTest.c">
+    <ClCompile Include="SeqListTest.c">
       <Filter>原始程式檔</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\user\Desktop\List\LinkList.h">
+    <ClInclude Include="LinkList.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\List\seq_list.h">
+    <ClInclude Include="seq_list.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
