@@ -18,7 +18,7 @@ typedef struct Student
 
 } *Student;
 
-int main1()
+int main_SeqList()
 {
 	//³Ğ«ØÁå¿ö
 	SeqList *list = SeqList_Create(1);

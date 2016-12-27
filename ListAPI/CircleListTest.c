@@ -2,22 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include"LinkList.h"
+#include"CircleList.h"
 
 typedef struct Teacher
 {
-	LinkListNode node;
+	CircleListNode node;
 	int age;
 	char *name;
 } *Teacher;
 
-int main_LinkList()
+int main_CircleList()
 {
 	//創建鍊錶
-	LinkList *list = LinkList_Create();
+	CircleList *list = CircleList_Create();
 	if (list == NULL)
 	{
-		printf("LinkList_Create Error...");
+		printf("CircleList_Create Error...");
 		return 0;
 	}
 
@@ -45,17 +45,17 @@ int main_LinkList()
 	t5->name = "world35";
 
 	//向鍊錶pos位置插入數據
-	LinkList_Insert(list, (LinkListNode*)t1, 0);
-	LinkList_Insert(list, (LinkListNode*)t2, 0);
-	LinkList_Insert(list, (LinkListNode*)t3, 0);
-	LinkList_Insert(list, (LinkListNode*)t4, 0);
-	LinkList_Insert(list, (LinkListNode*)t5, 0);
+	CircleList_Insert(list, (CircleListNode*)t1, 0);
+	CircleList_Insert(list, (CircleListNode*)t2, 0);
+	CircleList_Insert(list, (CircleListNode*)t3, 0);
+	CircleList_Insert(list, (CircleListNode*)t4, 0);
+	CircleList_Insert(list, (CircleListNode*)t5, 0);
 
 	//打印鍊錶的元素
 	printf("鍊錶內容如下：\n");
-	for (int i = 0; i < LinkList_Length(list); i++)
+	for (int i = 0; i < CircleList_Length(list) * 2; i++)
 	{
-		Teacher temp = (Teacher)LinkList_Get(list, i);
+		Teacher temp = (Teacher)CircleList_Get(list, i);
 		if (temp == NULL)
 		{
 			printf("LinkList_Get Error...");
@@ -66,9 +66,9 @@ int main_LinkList()
 
 	//從鍊錶pos位置刪除數據
 	printf("鍊錶刪除如下：\n");
-	while (LinkList_Length(list)>1)
+	while (CircleList_Length(list) > 1)
 	{
-		Teacher temp = (Teacher)LinkList_Delte(list, 0);
+		Teacher temp = (Teacher)CircleList_Delte(list, 0);
 
 		if (temp == NULL)
 		{
@@ -81,9 +81,9 @@ int main_LinkList()
 
 	//打印鍊錶的元素
 	printf("鍊錶內容如下：\n");
-	for (int i = 0; i < LinkList_Length(list); i++)
+	for (int i = 0; i < CircleList_Length(list); i++)
 	{
-		Teacher temp = (Teacher)LinkList_Get(list, i);
+		Teacher temp = (Teacher)CircleList_Get(list, i);
 		if (temp == NULL)
 		{
 			printf("LinkList_Get Error...");
@@ -92,7 +92,7 @@ int main_LinkList()
 		printf("teacher[%d] age:%d,name:%s;\n", i, temp->age, temp->name);
 	}
 
-	LinkList_Destroy(list);
+	CircleList_Destroy(list);
 
 	printf("finished...\n");
 	getchar();

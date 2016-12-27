@@ -120,7 +120,7 @@ LinkListNode* LinkList_Delte(LinkList* list, int pos)
 	if (ret != NULL)
 	{
 		current->next = ret->next;
-	}
+	}	
 
 	headList->length--;
 
