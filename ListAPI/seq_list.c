@@ -130,7 +130,7 @@ SeqListNode* SeqList_Get(SeqList* list, int pos)
 }
 
 //從鍊錶pos位置刪除數據
-SeqListNode* SeqList_Delte(SeqList* list, int pos)
+SeqListNode* SeqList_Delete(SeqList* list, int pos)
 {
 	HeadSeqList *tempList = (HeadSeqList *)list;
 	if (tempList->capacity < (unsigned)pos || pos < 0 || tempList == NULL)

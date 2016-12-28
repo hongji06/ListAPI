@@ -1,7 +1,7 @@
 //棧的線性存儲
 #ifndef _SeqStack_H
 #define _SeqStack_H
-typedef void* SeqStack;
+typedef void SeqStack;
 
 //create stack
 SeqStack * SeqStack_Create(int capacity);

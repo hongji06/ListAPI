@@ -146,19 +146,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="comput.h" />
     <ClInclude Include="LinkList.h" />
+    <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="Scaner.h" />
+    <ClInclude Include="SeqQueue.h" />
     <ClInclude Include="SeqStack.h" />
     <ClInclude Include="seq_list.h" />
     <ClInclude Include="Transfer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="comput.c" />
     <ClCompile Include="LinkList.c" />
+    <ClCompile Include="LinkQueue.c" />
+    <ClCompile Include="LinkQueueTest.c" />
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="LinkStackTest.c" />
     <ClCompile Include="Scaner.c" />
     <ClCompile Include="ScanerTest.c" />
+    <ClCompile Include="SeqQueue.c" />
+    <ClCompile Include="SeqQueueTest.c" />
     <ClCompile Include="SeqStack.c" />
     <ClCompile Include="SeqStackTest.c" />
     <ClCompile Include="seq_list.c" />

@@ -68,7 +68,7 @@ int main_CircleList()
 	printf("Áå¿ö§R°£¦p¤U¡G\n");
 	while (CircleList_Length(list) > 1)
 	{
-		Teacher temp = (Teacher)CircleList_Delte(list, 0);
+		Teacher temp = (Teacher)CircleList_Delete(list, 0);
 
 		if (temp == NULL)
 		{

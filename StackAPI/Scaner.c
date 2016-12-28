@@ -8,7 +8,7 @@
 int scaner(char * str)
 {
 	//create stack
-	LinkStack stack = LinkStack_Create();
+	LinkStack *stack = LinkStack_Create();
 
 	while (*str != '\0') {
 		if (isLeft(*str))

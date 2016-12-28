@@ -29,6 +29,6 @@ int LinkList_Insert(LinkList* list, LinkListNode * node, int pos);
 LinkListNode* LinkList_Get(LinkList* list, int pos);
 
 //從鍊錶pos位置刪除數據
-LinkListNode* LinkList_Delte(LinkList* list, int pos);
+LinkListNode* LinkList_Delete(LinkList* list, int pos);
 
 #endif /* _List_H */

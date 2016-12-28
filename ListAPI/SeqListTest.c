@@ -67,7 +67,7 @@ int main_SeqList()
 	printf("Áå¿ö§R°£¦p¤U¡G\n");
 	while (SeqList_Length(list)>1)
 	{
-		Teacher temp = (Teacher)SeqList_Delte(list, 0);
+		Teacher temp = (Teacher)SeqList_Delete(list, 0);
 		if (temp == NULL)
 		{
 			printf("SeqList_Delte Error...\n");

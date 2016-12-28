@@ -33,6 +33,15 @@
     <ClInclude Include="Transfer.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="comput.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SeqQueue.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkQueue.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SeqStack.c">
@@ -63,6 +72,21 @@
       <Filter>原始程式檔</Filter>
     </ClCompile>
     <ClCompile Include="transferTest.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="comput.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="SeqQueue.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="SeqQueueTest.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkQueue.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkQueueTest.c">
       <Filter>原始程式檔</Filter>
     </ClCompile>
   </ItemGroup>

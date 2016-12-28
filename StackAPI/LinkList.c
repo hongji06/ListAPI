@@ -17,7 +17,7 @@ LinkList * LinkList_Create()
 	memset(headList, 0, sizeof(HeadLinkList));
 	headList->length = 0;
 	headList->head.next = NULL;
-	return headList;
+	return (LinkList *)headList;
 }
 
 //綪反铃况
@@ -98,7 +98,7 @@ LinkListNode* LinkList_Get(LinkList* list, int pos)
 }
 
 //眖铃况pos竚埃计沮
-LinkListNode* LinkList_Delte(LinkList* list, int pos)
+LinkListNode* LinkList_Delete(LinkList* list, int pos)
 {
 	if (list == NULL || pos < 0 || pos>LinkList_Length(list))
 	{

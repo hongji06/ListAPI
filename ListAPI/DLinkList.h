@@ -30,7 +30,7 @@ int DLinkList_Insert(DLinkList* list, DLinkListNode * node, int pos);
 DLinkListNode* DLinkList_Get(DLinkList* list, int pos);
 
 //從鍊錶pos位置刪除數據
-DLinkListNode* DLinkList_Delte(DLinkList* list, int pos);
+DLinkListNode* DLinkList_Delete(DLinkList* list, int pos);
 
 //刪除鍊錶中的某個數據元素
 DLinkListNode * DLinkList_DeleteNode(DLinkList* list, DLinkListNode * node);

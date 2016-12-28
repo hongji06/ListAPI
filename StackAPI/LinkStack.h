@@ -1,7 +1,7 @@
 //´ÌªºÁå¦¡¦sÀx
 #ifndef _LinkStack_H
 #define _LinkStack_H
-typedef void* LinkStack;
+typedef void LinkStack;
 
 //create stack
 LinkStack * LinkStack_Create();

@@ -2,45 +2,72 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "LinkList.h"
 #include "LinkStack.h"
 #include "Transfer.h"
 
-int transfer(char * str)
+
+
+LinkList* transfer(char * str)
 {
-	LinkStack stack =LinkStack_Create();
+	LinkStack *stack =LinkStack_Create();
+	LinkList *list = LinkList_Create();
 	
-	while (*str != '\n')
+	while (*str != '\0')
 	{
 		if (isNumber(*str))
 		{
+			ValueNode valueNode = malloc(sizeof(ValueNode));
+			valueNode->item = (void *)(int)(*str);
+			LinkList_Insert(list, (LinkListNode*)valueNode, LinkList_Length(list));
 			output(*str);
 		}
 		else if (isOperator(*str))
 		{
 			while (isLevel(*str) <= isLevel((char)(int)LinkStack_Top(stack)))
 			{
+				ValueNode valueNode = malloc(sizeof(ValueNode));
+				valueNode->item = (void *)(int)LinkStack_Top(stack);
+				LinkList_Insert(list, (LinkListNode*)valueNode, LinkList_Length(list));
 				output((char)(int)LinkStack_Pop(stack));
 			}
 			LinkStack_Push(stack, (void *)(int)(*str));
 		}
 		else if (isParLeft(*str))
 		{
-			LinkStack_Push(stack, str);
+			LinkStack_Push(stack, (void *)(int)(*str));
 		}
 		else if (isParRight(*str))
 		{
-			while (isParLeft((char)(int)LinkStack_Pop(stack)))
+			while (!isParLeft((char)(int)LinkStack_Top(stack)))
 			{
+				ValueNode valueNode = malloc(sizeof(ValueNode));
+				valueNode->item = (void *)(int)LinkStack_Top(stack);
+				LinkList_Insert(list, (LinkListNode*)valueNode, LinkList_Length(list));
 				output((char)(int)LinkStack_Pop(stack));
 			}
 			LinkStack_Pop(stack);
 		}
+		else
+		{
+			return NULL;
+		}
+
 
 		str++;
 	}
 
+	while (LinkStack_Top(stack))
+	{
+		ValueNode valueNode = malloc(sizeof(ValueNode));
+		valueNode->item = (void *)(int)LinkStack_Top(stack);
+		LinkList_Insert(list, (LinkListNode*)valueNode, LinkList_Length(list));
+		output((char)(int)LinkStack_Pop(stack));
+	}
+	
+
 	LinkStack_Destroy(stack);
-	return 0;
+	return list;
 }
 int isNumber(char ch)
 {

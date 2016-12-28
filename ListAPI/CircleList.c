@@ -115,7 +115,7 @@ CircleListNode* CircleList_Get(CircleList* list, int pos)
 }
 
 //從鍊錶pos位置刪除數據
-CircleListNode* CircleList_Delte(CircleList* list, int pos)
+CircleListNode* CircleList_Delete(CircleList* list, int pos)
 {
 	if (list == NULL || pos < 0 || pos>CircleList_Length(list))
 	{
@@ -219,7 +219,7 @@ CircleListNode * CircleList_DeleteNode(CircleList* list, CircleListNode * node)
 
 		if (ret != NULL)
 		{
-			CircleList_Delte(headList, i);
+			CircleList_Delete(headList, i);
 		}
 	}
 

@@ -129,7 +129,7 @@ DLinkListNode* DLinkList_Get(DLinkList* list, int pos)
 }
 
 //從鍊錶pos位置刪除數據
-DLinkListNode* DLinkList_Delte(DLinkList* list, int pos)
+DLinkListNode* DLinkList_Delete(DLinkList* list, int pos)
 {
 	if (list == NULL || pos < 0 )
 	{
@@ -252,7 +252,7 @@ DLinkListNode * DLinkList_DeleteNode(DLinkList* list, DLinkListNode * node)
 
 		if (ret != NULL)
 		{
-			DLinkList_Delte(headList, i);
+			DLinkList_Delete(headList, i);
 		}
 	}
 

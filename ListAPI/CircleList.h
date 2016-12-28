@@ -28,7 +28,7 @@ int CircleList_Insert(CircleList* list, CircleListNode * node, int pos);
 CircleListNode* CircleList_Get(CircleList* list, int pos);
 
 //從鍊錶pos位置刪除數據
-CircleListNode* CircleList_Delte(CircleList* list, int pos);
+CircleListNode* CircleList_Delete(CircleList* list, int pos);
 
 //游標重置為鍊錶中的第一個元素
 CircleListNode * CircleList_Reset(CircleList* list);

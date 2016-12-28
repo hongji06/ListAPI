@@ -68,7 +68,7 @@ int main_LinkList()
 	printf("Áå¿ö§R°£¦p¤U¡G\n");
 	while (LinkList_Length(list)>1)
 	{
-		Teacher temp = (Teacher)LinkList_Delte(list, 0);
+		Teacher temp = (Teacher)LinkList_Delete(list, 0);
 
 		if (temp == NULL)
 		{

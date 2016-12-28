@@ -70,7 +70,7 @@ void* LinkStack_Pop(LinkStack* stack)
 	TLinkStackNode *tmp = (TLinkStackNode *)stack;
 	void * item = NULL;
 
-	tmp = (TLinkStackNode *)LinkList_Delte(stack, 0);
+	tmp = (TLinkStackNode *)LinkList_Delete(stack, 0);
 	if (tmp == NULL)
 	{
 		return NULL;

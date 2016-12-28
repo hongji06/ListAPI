@@ -32,7 +32,7 @@ int SeqList_Insert(SeqList* list, SeqListNode * node, int pos);
 SeqListNode* SeqList_Get(SeqList* list, int pos);
 
 //從鍊錶pos位置刪除數據
-SeqListNode* SeqList_Delte(SeqList* list, int pos);
+SeqListNode* SeqList_Delete(SeqList* list, int pos);
 
 //鍊錶長度增加
 SeqList * SeqListNode_Add(SeqList* list, int pos);

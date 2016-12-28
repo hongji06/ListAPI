@@ -98,7 +98,7 @@ LinkListNode* LinkList_Get(LinkList* list, int pos)
 }
 
 //從鍊錶pos位置刪除數據
-LinkListNode* LinkList_Delte(LinkList* list, int pos)
+LinkListNode* LinkList_Delete(LinkList* list, int pos)
 {
 	if (list == NULL || pos < 0 || pos>LinkList_Length(list))
 	{

@@ -39,9 +39,9 @@ int main_SeqStackTest()
 		printf("create seq stack err");
 	}
 
-	SeqStack_Push(stack, (SeqStack)t1);
-	SeqStack_Push(stack, (SeqStack)t2);
-	SeqStack_Push(stack, (SeqStack)t3);
+	SeqStack_Push(stack, (SeqStack*)t1);
+	SeqStack_Push(stack, (SeqStack*)t2);
+	SeqStack_Push(stack, (SeqStack*)t3);
 
 
 	printf("stack size is :%d\n", SeqStack_Size(stack));
